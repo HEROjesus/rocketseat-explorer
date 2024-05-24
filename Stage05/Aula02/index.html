@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Advinhação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+
+    <div class="container1">
+      <div class="text">
+        <h1>Você é bom em advinhação?</h1>
+        <p>Tente acertar o número que está entre 0 e 10</p>
+      </div>
+      <div class="insert">
+        <img class="tom" src="./assets/tom.gif" alt="tom">
+        <form>
+          <input class="input-number" type="number" min="0" max="10">
+          <button class="btn" onclick="handleClick(event)">Tentar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container2 hide">
+      <img class="acertou" src="./assets/pelezinho-miseravi.gif" alt="gif errou faustao">
+
+      <div class="text-button">
+
+        <h1>Acertou em <span class="xAttempts"></span> tentativa(s)</h1>
+        <button class="btn2" onclick="restartGame()">Jogar Novamente</button>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
